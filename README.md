@@ -15,3 +15,5 @@ graphql-automation
   - Queries: Get data from the server
   - Mutation: CRUD operation
   - Subscription: Maintaining real-time connection with the server
+  
+ - GraphQL schema basics: https://www.apollographql.com/docs/apollo-server/schema/schema
