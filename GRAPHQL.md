@@ -1,3 +1,10 @@
+Free public GraphQL API
+----------------------------------------------------
+```
+https://hasura.io/learn/graphql/graphiql
+```
+
+
 Parameterization
 ----------------------------------------------------
 ```
