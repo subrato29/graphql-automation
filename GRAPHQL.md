@@ -4,6 +4,33 @@ Free public GraphQL API
 https://hasura.io/learn/graphql/graphiql
 ```
 
+Query
+----------------------------------------------------
+```
+{
+  users(limit: 5) {
+    id
+    name
+    todos {
+      title
+    }
+  }
+}
+```
+
+Mutation
+----------------------------------------------------
+```
+mutation {
+  insert_todos(objects: {title: "Subratos graphQL"}) {
+    affected_rows
+    returning {
+      id
+      title
+    }
+  }
+}
+```
 
 Parameterization
 ----------------------------------------------------
@@ -39,19 +66,5 @@ Query variable
 {
   "limit": 5,
   "title": "New"
-}
-```
-
-Mutation
-----------------------------------------------------
-```
-mutation {
-  insert_todos(objects: {title: "Subratos graphQL"}) {
-    affected_rows
-    returning {
-      id
-      title
-    }
-  }
 }
 ```
